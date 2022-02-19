@@ -26,7 +26,7 @@ class Colours {
 
     fun coloursInAllCapitals() : List<String>{
         //TODO return the colours in ALL CAPS
-        return listOf("this should return colours in all capitals")
+        return colours.
     }
 
     fun coloursStartingWithLetter(letter: Char) : List<String>{
