@@ -33,18 +33,18 @@ fun main(args: Array<String>){
     println("--------------------------")
 
     println("Sorted list is: ")
-    print(colours.coloursInAplhabeticOrder())
+    println(colours.coloursInAplhabeticOrder())
 
-    print("CAPITALISED list is:")
-    print(colours.coloursInAllCapitals())
+    println("CAPITALISED list is:")
+    println(colours.coloursInAllCapitals())
 
     println("--------------------------")
 
 
-    println("Colours starting with specific letter ___ [ B was chosen ]")
+    println("Colours starting with specific letter [ B was chosen ] :")
     println(colours.coloursStartingWithLetter('B'))
 
-    println("Colours with a specific number of chars ___ [ 6 was chosen]")
+    println("Colours with a specific number of chars [ 6 was chosen] :")
     println(colours.coloursWithSpecificNumberOfChars(6))
 
     println("--------------------------")
@@ -59,6 +59,7 @@ fun main(args: Array<String>){
     //    Colour: Orange
     //    ...
     //    Colour: Silver
+
 
     //TODO for the three additional functions you wrote in Colours.kt, print the returned value here.
 

@@ -21,17 +21,20 @@ class Colours {
 
     fun coloursInAplhabeticOrder() : List<String>{
         //TODO return the colours in alphabetical order
-        return listOf("this should return colours in alphabetic order")
+        // Answer found at https://stackoverflow.com/questions/53351465/sort-array-by-alphabet-using-kotlin
+        val sortedColours = colours.sortedBy { it.toString() }
+        return sortedColours
     }
 
     fun coloursInAllCapitals() : List<String>{
         //TODO return the colours in ALL CAPS
-        return colours.
+        val uppercaseColours = colours.map { it.uppercase() }
+        return uppercaseColours
     }
 
     fun coloursStartingWithLetter(letter: Char) : List<String>{
         //TODO return the colours starting with the letter passed as a parameter
-        return listOf("this should return colours that start with ${letter}")
+        return return colours.filter {it.contains(letter)}
     }
 
     fun coloursWithSpecificNumberOfChars(size: Int) : List<String>{
@@ -48,7 +51,7 @@ class Colours {
     fun isColourInTheList(colour : String) : Boolean{
         //TODO return true of the colour passed as a parameter is in the list and false otherwise
         // Note: the search should be case insensitive - if blue is passed as a parameter it should find Blue, BLUE etc.
-        return false
+        return colours.contains(colour)
     }
 
     //TODO Write THREE additional functions of your choice that will perform some sort of
