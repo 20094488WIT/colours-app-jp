@@ -36,12 +36,13 @@ class Colours {
 
     fun coloursWithSpecificNumberOfChars(size: Int) : List<String>{
         //TODO return the colours that have exactly the same number of chars as the number passed as a parameter
-        return listOf("this should return colours that have ${size} chars")
+        return colours.filter {it.length == size}
     }
 
     fun coloursWithLessCharsThan(size: Int) : List<String>{
         //TODO return the colours that have less chars than the number passed as s parameter
         return listOf("this should return colours less than ${size} chars")
+        return colours.filter {it.length <= size}
     }
 
     fun isColourInTheList(colour : String) : Boolean{
